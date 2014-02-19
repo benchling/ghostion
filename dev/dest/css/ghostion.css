@@ -6271,6 +6271,11 @@ h1, h2, h3, h4, h5, h6, p {
 #at_mainbody {
   padding: 2rem 0;
 }
+@media only screen and (max-width: 40em) {
+  #at_mainbody {
+    padding: 1rem 0;
+  }
+}
 #at_mainbody .at_block:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -6285,11 +6290,16 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
 }
+@media only screen and (max-width: 40em) {
+  #at_footer {
+    text-align: center;
+  }
+}
 #at_footer ul {
   list-style: none;
 }
 #at_footer ul li {
-  float: left;
+  display: inline-block;
   margin-right: 10px;
 }
 #at_footer ul li a {
@@ -6364,16 +6374,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .at_post_title {
   line-height: 2.8rem;
-  margin: 0 0 5px 0;
+  margin: 0;
   letter-spacing: -1px;
   font-weight: bold;
+  font-size: 2.8rem;
 }
 .at_post_title a {
   border: 0;
-}
-.post-template .at_post_title {
-  margin: 0;
-  line-height: 2.5rem;
 }
 
 .at_post_author, .at_post_time, .at_post_tags {

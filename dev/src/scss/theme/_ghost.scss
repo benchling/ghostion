@@ -12,15 +12,12 @@
 }
 .at_post_title {
     line-height: 2.8rem;
-    margin: 0 0 5px 0;
+    margin: 0;
     letter-spacing: -1px;
     font-weight: bold;
+    font-size: 2.8rem;
     a {
     	border: 0;
-    }
-    .post-template & {
-    	margin: 0;
-    	line-height: 2.5rem;
     }
 }
 .at_post_author, .at_post_time, .at_post_tags {

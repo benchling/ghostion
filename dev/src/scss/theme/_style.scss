@@ -215,6 +215,9 @@ h1, h2, h3, h4, h5, h6, p {
 //*-----------------------------------------
 #at_mainbody {
 	padding: 2rem 0;
+	@media #{$small-only} {
+		padding: 1rem 0;
+	}
 	.at_block {
 		&:last-child {
 		    margin-bottom: 0;
@@ -234,10 +237,13 @@ h1, h2, h3, h4, h5, h6, p {
 	background: $footer_background_color;
 	font-size: 12px;
 	font-family: "Open Sans", sans-serif;
+	@media #{$small-only} {
+		text-align: center;
+	}
 	ul {
 		list-style: none;
 		li {
-			float: left;
+			display: inline-block;
 			margin-right: 10px;
 			a {
 				border: 0;
