@@ -6372,13 +6372,17 @@ img {
 }
 .at_sidebar .btn {
   margin-top: 5px;
-  max-width: 200px;
 }
 .at_sidebar p, .at_sidebar .fb-like {
   margin-bottom: 1rem;
 }
 .at_sidebar .fb-like {
   top: -3px;
+}
+@media only screen and (max-width: 40em) {
+  .at_sidebar {
+    margin-top: 1rem;
+  }
 }
 
 #mc_embed_signup input {
@@ -6388,6 +6392,8 @@ img {
 }
 #mc_embed_signup .btn {
   margin: 0;
+  display: block;
+  width: 100%;
 }
 
 .at_post_meta {
