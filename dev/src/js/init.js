@@ -4,8 +4,40 @@
     $(document).ready(function(){
         $(".at_block").fitVids();
         $("pre code").each(function(i, e) {hljs.highlightBlock(e)});
-        $("#at_body").wrap( "<div class='off-canvas-wrap'><div class='inner-wrap'></div></div>" ).append("<a class='at_off_canvas_toggle left-off-canvas-toggle'><span class='fa fa-bars'></span></a><a class='exit-off-canvas'></a>");
-		$(".at_search_input").ghostHunter({results: ".at_search_results", onKeyUp: true, info_template: "<span class='at_search_clear_toggle'>&#215;</span> <span class='at_search_results_amount'>Number of posts found: {{amount}}</span><span class='clearfix'></span>", result_template : "<span><a href='{{link}}'><span class='at_search_results_title'>{{title}}</span></a></span>"});
-		$("#at_search").on('click', '.at_search_clear_toggle', function(e) {e.preventDefault();$(".at_search_input").val('');$(".at_search_results").removeClass("at_search_active");});
+
+		var $p = $(".at_post_content p").last();
+		var text = $p.text();
+		if (text.substring(0, 2) === '::') {
+			$p.remove();
+			var initials = text.substring(2);
+			var bios = {
+				SXW: {
+					'name': 'Sajith Wickramasekara',
+					'bio': 'CEO and Co-Founder'
+				},
+				AXS: {
+					'name': 'Ashutosh Singhal',
+					'bio': 'Co-Founder'
+				},
+				JDM: {
+					'name': 'Joshua Ma',
+					'bio': 'Software Engineer'
+				},
+				SSH: {
+					'name': 'Saif Hakim',
+					'bio': 'Software Engineer'
+				},
+				VXG: {
+					'name': 'Vineet Gopal',
+					'bio': 'Software Engineer'
+				}
+			};
+			var bio = bios[initials];
+			if (bio) {
+				$('.at_author_name h3').text(bio.name);
+				$('.at_author_bio').text(bio.bio + ' @ Benchling');
+			}
+		}
+		console.log($p, $p.text());
     });
 }(jQuery));

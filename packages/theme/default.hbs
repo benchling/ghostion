@@ -20,13 +20,6 @@
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
-</head>
-<body class="{{body_class}}">
-    <div id="at_page_surround">
-        <div id="at_body">
-            {{{ body }}}
-        </div>
-    </div>
 
     {{! The main JavaScript file for Ghostion }}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -36,11 +29,27 @@
         /*** CONFIGURATION VARIABLES: EDIT THE VALUES BELOW FOR THEME CONFIGURATION ***/
         var ghostionConfig = {
             site_url:                       "ghostion.ghostdemo.axiantheme.com",
-            google_fonts_family:            "Open+Sans:400,400italic,700,700italic",
+            google_fonts_family:            ["PT+Sans:400,700:latin", "Merriweather:400,400italic,700,700italic:latin", "Open+Sans:400,600:latin"],
             google_analytics_tracking_id:   "UA-45630355-2",
             disqus_shortname:               "ghostion"
         };
     </script>
     <script src="/assets/js/ghostion.min.js"></script>
+</head>
+<body class="{{body_class}}">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1410306652554499";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="strip"></div>
+    <div id="at_page_surround">
+        <div id="at_body">
+            {{{ body }}}
+        </div>
+    </div>
 </body>
 </html>
