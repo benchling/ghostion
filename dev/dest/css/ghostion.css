@@ -6249,16 +6249,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 12px;
   display: block;
   text-align: center;
-  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
-  background-image: -webkit-gradient(linear, left 0, left 100%, from(#40d47e), to(#2cc36b));
-  background-image: -webkit-linear-gradient(top, #40d47e, 0, #2cc36b, 100%);
-  background-image: -moz-linear-gradient(top, #40d47e 0, #2cc36b 100%);
-  background-image: linear, to bottom, #40d47e 0, #2cc36b 100%;
+  background-image: -webkit-linear-gradient(top, #40d47e, #2cc36b);
+  background-image: linear-gradient(to bottom, #40d47e, #2cc36b);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff40d47e', endColorstr='#ff2cc36b', GradientType=0);
 }
 .btn:hover {
+  background-image: -webkit-linear-gradient(top, #2ecc71, #27ae60);
+  background-image: linear-gradient(to bottom, #2ecc71, #27ae60);
   background-image: -webkit-gradient(linear, left 0, left 100%, from(#2ecc71), to(#27ae60));
   background-image: -webkit-linear-gradient(top, #2ecc71, 0, #27ae60, 100%);
   background-image: -moz-linear-gradient(top, #2ecc71 0, #27ae60 100%);
@@ -6266,6 +6264,17 @@ h1, h2, h3, h4, h5, h6, p {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2ecc71', endColorstr='#ff27ae60', GradientType=0);
   color: #fff;
+}
+.btn.default {
+  background-image: -webkit-linear-gradient(top, #fbfcfc, #e9eeef);
+  background-image: linear-gradient(to bottom, #fbfcfc, #e9eeef);
+  color: #555;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #bdc3c7;
+}
+.btn.default:hover {
+  background-image: -webkit-linear-gradient(top, #ecf0f1, #dae2e4);
+  background-image: linear-gradient(to bottom, #ecf0f1, #dae2e4);
 }
 
 #at_mainbody {
@@ -6363,6 +6372,18 @@ h1, h2, h3, h4, h5, h6, p {
 .at_sidebar p, .at_sidebar .fb-like {
   margin-bottom: 1rem;
 }
+.at_sidebar .fb-like {
+  top: -3px;
+}
+
+#mc_embed_signup input {
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+#mc_embed_signup .btn {
+  margin: 0;
+}
 
 .at_post_meta {
   color: #c1c1c1;
@@ -6377,10 +6398,14 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   letter-spacing: -1px;
   font-weight: bold;
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 .at_post_title a {
   border: 0;
+  color: inherit;
+}
+.at_post .at_post_title {
+  font-size: 3rem;
 }
 
 .at_post_author, .at_post_time, .at_post_tags {
