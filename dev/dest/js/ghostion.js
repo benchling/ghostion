@@ -1303,18 +1303,18 @@ atPost.loadDisqus = function() {
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', ghostionConfig.google_analytics_tracking_id, ghostionConfig.site_url);
 ga('send', 'pageview');
-WebFontConfig = {
-  google: { families: ghostionConfig.google_fonts_family }
-};
-(function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-    '://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
+// WebFontConfig = {
+//   google: { families: ghostionConfig.google_fonts_family }
+// };
+// (function() {
+//   var wf = document.createElement('script');
+//   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+//     '://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js';
+//   wf.type = 'text/javascript';
+//   wf.async = 'true';
+//   var s = document.getElementsByTagName('script')[0];
+//   s.parentNode.insertBefore(wf, s);
+// })();
 /*
 Syntax highlighting with language autodetection.
 http://highlightjs.org/
@@ -3494,7 +3494,7 @@ hljs.registerLanguage("makefile", function (a) {
     "use strict";
     $(document).foundation();
     $(document).ready(function(){
-        $(".at_block").fitVids();
+        // $(".at_block").fitVids();
         $("pre code").each(function(i, e) {hljs.highlightBlock(e)});
 
 		var $p = $(".at_post_content p").last();

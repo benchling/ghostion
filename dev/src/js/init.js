@@ -2,7 +2,7 @@
     "use strict";
     $(document).foundation();
     $(document).ready(function(){
-        $(".at_block").fitVids();
+        // $(".at_block").fitVids();
         $("pre code").each(function(i, e) {hljs.highlightBlock(e)});
 
 		var $p = $(".at_post_content p").last();
