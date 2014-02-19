@@ -3530,6 +3530,5 @@ hljs.registerLanguage("makefile", function (a) {
 				$('.at_author_bio').text(bio.bio + ' @ Benchling');
 			}
 		}
-		console.log($p, $p.text());
     });
 }(jQuery));
