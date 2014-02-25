@@ -6186,10 +6186,6 @@ p {
   margin: 0 auto;
 }
 
-img {
-  border: 5px solid #eee;
-}
-
 h1, h2, h3, h4, h5, h6, p {
   cursor: text;
 }
@@ -6491,6 +6487,15 @@ img {
 }
 .at_link_with_arrow .fa {
   margin-left: 5px;
+}
+
+.at_post_content img {
+  border: 5px solid #eee;
+  display: block;
+  margin: 10px 0;
+}
+.at_post_content ul li {
+  margin-top: 10px;
 }
 
 #at_disqus {
