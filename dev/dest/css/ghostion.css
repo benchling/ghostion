@@ -6492,7 +6492,7 @@ img {
 .at_post_content img {
   border: 5px solid #eee;
   display: block;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 .at_post_content ul li {
   margin-top: 10px;
