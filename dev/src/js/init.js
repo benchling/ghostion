@@ -36,7 +36,7 @@
 			if (bio) {
 				$('.at_author_name h3').text(bio.name);
 				$('.at_author_bio').text(bio.bio + ' @ ');
-				$a = $('<a>').text('Benchling').attr('href', 'https://benchling.com/');
+				var $a = $('<a>').text('Benchling').attr('href', 'https://benchling.com/');
 				$('.at_author_bio').append($a);
 			}
 		}
