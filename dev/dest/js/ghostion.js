@@ -3491,11 +3491,11 @@ hljs.registerLanguage("makefile", function (a) {
   }
 });
 (function ($) {
-    "use strict";
-    $(document).foundation();
-    $(document).ready(function(){
-        // $(".at_block").fitVids();
-        $("pre code").each(function(i, e) {hljs.highlightBlock(e)});
+	"use strict";
+	$(document).foundation();
+	$(document).ready(function(){
+		// $(".at_block").fitVids();
+		$("pre code").each(function(i, e) {hljs.highlightBlock(e)});
 
 		var $p = $(".at_post_content p").last();
 		var text = $p.text();
@@ -3522,6 +3522,14 @@ hljs.registerLanguage("makefile", function (a) {
 				VXG: {
 					'name': 'Vineet Gopal',
 					'bio': 'Software Engineer'
+				},
+				SRD: {
+					'name': 'Somak Das',
+					'bio': 'Software Engineer'
+				},
+				EFL: {
+					'name': 'Evan Lynch',
+					'bio': 'Software Engineering Intern'
 				}
 			};
 			var bio = bios[initials];
@@ -3532,5 +3540,5 @@ hljs.registerLanguage("makefile", function (a) {
 				$('.at_author_bio').append($a);
 			}
 		}
-    });
+	});
 }(jQuery));
