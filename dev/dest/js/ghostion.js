@@ -3545,9 +3545,11 @@ hljs.registerLanguage("makefile", function (a) {
 					var $small = $('<small>').append('(').append($twtr).append(')');
 					$('.at_author_name h3').append(' ').append($small);
 				}
-				$('.at_author_bio').text(bio.bio + ' @ ');
-				var $a = $('<a>').text('Benchling').attr('href', 'https://benchling.com/');
-				$('.at_author_bio').append($a);
+				$('.at_author_bio').text(bio.bio);
+				if (initials != 'MLL') {
+					var $a = $('<a>').text('Benchling').attr('href', 'https://benchling.com/');
+					$('.at_author_bio').append(' ').append($a);
+				}
 			}
 		}
 	});
