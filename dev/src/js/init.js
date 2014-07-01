@@ -39,10 +39,20 @@
 					'name': 'Evan Lynch',
 					'bio': 'Software Engineering Intern'
 				}
+				MLL: {
+					'name': 'Melissa Lau',
+					'bio': 'Neurosciences PhD candidate at UCSD, studying the signaling systems that regulate neurogenesis.',
+					'twitter': 'MelissaLau2'
+				}
 			};
 			var bio = bios[initials];
 			if (bio) {
 				$('.at_author_name h3').text(bio.name);
+				if (bio.twitter) {
+					var $twtr = $('<a>').text('@' + bio.twitter).attr('href', 'https://twitter.com/' + bio.twitter);
+					var $small = $('<small>').append('(').append($twtr).append(')');
+					$('.at_author_name h3').append(' ').append($small);
+				}
 				$('.at_author_bio').text(bio.bio + ' @ ');
 				var $a = $('<a>').text('Benchling').attr('href', 'https://benchling.com/');
 				$('.at_author_bio').append($a);
