@@ -56,7 +56,7 @@
 				$('.at_author_bio').text(bio.bio);
 				if (initials != 'MLL') {
 					var $a = $('<a>').text('Benchling').attr('href', 'https://benchling.com/');
-					$('.at_author_bio').append(' ').append($a);
+					$('.at_author_bio').append(' @ ').append($a);
 				}
 			}
 		}
