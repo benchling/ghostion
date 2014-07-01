@@ -38,7 +38,7 @@
 				EFL: {
 					'name': 'Evan Lynch',
 					'bio': 'Software Engineering Intern'
-				}
+				},
 				MLL: {
 					'name': 'Melissa Lau',
 					'bio': 'Neurosciences PhD candidate at UCSD, studying the signaling systems that regulate neurogenesis.',
