@@ -6491,6 +6491,9 @@ img {
   margin-left: 5px;
 }
 
+.at_post_content p {
+  line-height: 1.8;
+}
 .at_post_content img {
   border: 5px solid #eee;
   display: block;
