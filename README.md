@@ -1,3 +1,5 @@
 ## ghostjelly
 
-This is a hacky blog theme for ghost.org powering our blog. Based off of ghostion.
+This is a hacky blog theme for ghost.org temporarily powering our blog. Beware!
+
+Based off of ghostion.
