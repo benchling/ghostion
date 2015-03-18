@@ -43,7 +43,11 @@
 					'name': 'Melissa Lau',
 					'bio': 'Neurosciences PhD candidate at UCSD, studying the signaling systems that regulate neurogenesis.',
 					'twitter': 'MelissaLau2'
-				}
+				},
+                JSG: {
+                    'name': 'Jonathan Gootenberg',
+                    'bio': 'Systems biology PhD candidate at Harvard University, developing molecular tools to understand biology.'
+                }
 			};
 			var bio = bios[initials];
 			if (bio) {
