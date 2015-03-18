@@ -13,8 +13,7 @@ var gulp        = require('gulp'),
 
 // Compile scss Files
 gulp.task('scss', function() {
-    return gulp.src('dev/src/scss/ghostion.scss')
-        .pipe(sass({style: 'expanded', quiet: true, cacheLocation: 'dev/src/scss/.sass-cache'}))
+    return sass('dev/src/scss/ghostion.scss', {style: 'expanded', quiet: true, cacheLocation: 'dev/src/scss/.sass-cache'})
         .pipe(gulp.dest('dev/dest/css'))
         .pipe(minifycss())
         .pipe(rename({suffix: '.min'}))
